@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg">
+    <link rel="stylesheet" href="portfolio.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="logo"><img src="portfolio-assets/logo.svg" alt="logo-MC"></div>
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="gallery.html">Gallery page</a></li>
+        </ul>
+        <div id="mobile-menu-bar">
+          <img src="mobile-assets/menu-bar.svg" id="mobile-menu-bar-img" alt="menu-icon">
+        </div>
+      </nav>
+      <div id="mobile-menu" style="display: none;">
+        <div class="topnav">
+          <div id="myLinks">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact Me</a>
+            <a href="gallery.html">Gallery page</a>
+          </div>
+        </div>
+      </div>
+      <div id="hero-image"></div>
+    </header>
+    <main>
+      <section>
+        <h2 id="projects">Projects</h2>
+        <div id="cards">
+          <div class="card">
+            <img src="projects/kevin-canlas-ia7-T2bjDb4-unsplash.jpg" alt="codes-in-a-monitor" style="width: 100%">
+            <div class="details">
+              <h4><b>Portfolio</b></h4>
+              <p>Details <i class="fas fa-external-link-alt"></i></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="projects/Todo-Vanilla-MVP.png" alt="snapshot-of-todo-app" style="width: 100%;">
+            <div class="details">
+              <h4><b>Todo App</b></h4>
+              <p><a href="https://github.com/mahadyC/todo-vanilla-js-mvp-implementation" target="_blank">Details <i class="fas fa-external-link-alt"></i></a></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="projects/Final-Project.png" alt="snapshot-of-food-tracking-app" style="width: 100%;">
+            <div class="details">
+              <h4><b>Food Tracking App</b></h4>
+              <p>Details <i class="fas fa-external-link-alt"></i></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 id="skills">Skills</h2>
+        <div id="skills-container">
+          <div class="skill-card">
+            <div><i class="fa fa-html5" aria-hidden="true"></i></div>
+            <p><b><i>HTML5</i></b></p>
+            <p>Professional level</p>
+          </div>
+          <div class="skill-card">
+            <div><i class="fa fa-css3" aria-hidden="true"></i>
+            </div>
+            <p><b><i>CSS3</i></b></p>
+            <p>Professional level</p>
+          </div>
+          <div class="skill-card">
+            <div><i class="fab fa-js"></i></div>
+            <p><b><i>JavaScript</i></b></p>
+            <p>Professional level</p>
+          </div>
+          <div class="skill-card">
+            <div><i class="fab fa-figma"></i></div>
+            <p><b><i>Figma</i></b></p>
+            <p>Basic level</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 id="about">About Me</h2>
+        <div id="about-container">
+          <p>I am learning to be a full stack web developer. I have learned the basics of Figma a useful designing tool for developers. I have gained understanding
+            about HTML5, CSS3 and JavaScript to professional working level. 
+          </p>
+          <div id="picture-container"></div>
+        </div>
+      </section>
+      <section>
+        <h2 id="contact">Contact Me</h2>
+        <form action="#/">
+          <div class="form-elements-container">
+            <div class="input-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+              <label for="msg">Message:</label>
+              <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Write your message here!" required></textarea>
+            </div>
+            <button id="send-btn">Send Message</button>
+          </div>
+        </form>
+      </section>
+      <section id="back-to-top-sec">
+          <button id="back-to-top" class="hidden">
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="back-to-top-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M7 11l5-5m0 0l5 5m-5-5v12"
+            />
+          </svg>
+          </button>
+      </section>
+    </main>
+    <footer>copyrights by Mahady Chowdhury</footer>
+    <script src="https://kit.fontawesome.com/41a4d31ad9.js" crossorigin="anonymous"></script>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
